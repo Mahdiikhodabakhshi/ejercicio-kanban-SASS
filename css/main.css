@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+main > h1 {
+  position: relative;
+  left: 40%;
+  top: 5rem;
+  color: white;
+  background-color: rgba(8, 110, 176, 0.4196078431);
+  width: fit-content;
+  padding: 6px 15px;
+  border-radius: 11px;
+  font-size: 24px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+#kanban {
+  position: relative;
+  margin: 6rem 2rem 0;
+  display: grid;
+  width: 95%;
+  gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 15px;
+  padding-bottom: 30px;
+}
+
+.column {
+  padding: 15px 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.752);
+  width: auto;
+  height: fit-content;
+}
+.column h2 {
+  margin-bottom: 15px;
+}
+
+.card {
+  background-color: white;
+  margin-top: 5px;
+  height: fit-content;
+  border-radius: 10px;
+}
+.card h3,
+.card p {
+  padding: 10px 20px;
+}
+
+.tagClose {
+  display: block;
+  float: right;
+  color: red;
+  margin: 7px 15px 5px 100%;
+}
+
+.tags {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.tags .tag {
+  display: inline;
+  padding-top: 15px;
+  margin-right: 5px;
+}
+.tags .front {
+  background-color: rgb(28, 212, 28);
+  color: white;
+  border-radius: 50px;
+  padding: 4px 0 3px 3px;
+}
+.tags .back {
+  background-color: rgb(230, 49, 49);
+  color: white;
+  border-radius: 50px;
+  padding: 4px 0 3px 4px;
+}
+.tags .device {
+  background-color: rgb(225, 246, 37);
+  color: white;
+  border-radius: 50px;
+  padding: 4px 6px;
+}
+
+.card:hover {
+  background-color: rgba(83, 83, 158, 0.781);
+}
+.card:hover .tagClose,
+.card:hover .back,
+.card:hover .front,
+.card:hover .device {
+  color: black;
+}
+.card:hover h3,
+.card:hover p {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

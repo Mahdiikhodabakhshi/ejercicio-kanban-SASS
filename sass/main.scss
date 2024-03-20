@@ -1,0 +1,123 @@
+// main.scss
+@import 'variables';
+
+* {
+    padding: $padding;
+    margin: $margin;
+}
+
+main {
+    background-image: $background-image;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    height: $height;
+}
+
+main > h1 {
+    position: $position-kaban;
+    left: $left;
+    top: $top;
+    color: $color;
+    background-color: $background-color;
+    width: $width;
+    padding: $padding-h1;
+    border-radius: $border-radius-h1;
+    font-size: $font-size-h1;
+    filter: $filter-h1;
+}
+
+#kanban {
+    position: $position-kaban;
+    margin: $margin-kaban;
+    display: $display-kaban;
+    width: $width-kaban;
+    gap: $gap-kaban;
+    grid-template-columns: repeat(5, auto);
+    column-gap: $column-gap-kaban;
+    padding-bottom: $padding-bottom-kaban;
+}
+
+.column {
+    padding: $padding-column;
+    border-radius: $border-radius-column;
+    background-color: $background-color-column;
+    width: auto;
+    height: $height-column;
+
+     h2 {
+    margin-bottom: 15px;
+    }
+}
+
+
+
+.card {
+    background-color: $background-color-card;
+    margin-top: $margin-top-card;
+    height: $height-column;
+    border-radius: $border-radius-card;
+
+     h3,
+     p {
+        padding: $padding-card;
+        }
+}
+
+
+
+.tagClose {
+    display: block;
+    float: right;
+    color: $color-tagClose;
+    margin: $margin-tagClose;
+}
+
+.tags {
+    margin-left: $margin-left-tags;
+    padding-top: $padding-top-tags;
+    padding-bottom: $padding-bottom-tags;
+
+    .tag {
+    display: inline;
+    padding-top: 15px;
+    margin-right: 5px;
+    }
+
+    .front {
+        background-color: $background-color-front;
+        color: $color-front;
+        border-radius: $border-radius-front;
+        padding: $padding-front;
+    }
+
+    .back {
+        background-color: $background-color-back;
+        color: $color-back;
+        border-radius: $border-radius-back;
+        padding: $padding-back;
+    }
+
+    .device {
+        background-color: $background-color-device;
+        color: $color-device;
+        border-radius: $border-radius-device;
+        padding: $padding-device;
+    }
+}
+.card:hover {
+    background-color: $background-color-card-hover;
+
+    .tagClose,
+    .back,
+    .front,
+    .device {
+        color: $color-hover;
+    }
+     h3,
+     p {
+        color: $color-hover-h3;
+    }
+}
+
+
+
